@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name Voltage_regulator)(type Legacy)(uri ${KIPRJMOD}/librerias_extras/Voltage_regulator.lib)(options "")(descr ""))
+  (lib (name Type-C)(type Legacy)(uri ${KIPRJMOD}/librerias_extras/Type-C.pretty/Type-C.lib)(options "")(descr ""))
+  (lib (name Sensor_lightning)(type Legacy)(uri ${KIPRJMOD}/librerias_extras/Sensor_lightning.lib)(options "")(descr ""))
 )

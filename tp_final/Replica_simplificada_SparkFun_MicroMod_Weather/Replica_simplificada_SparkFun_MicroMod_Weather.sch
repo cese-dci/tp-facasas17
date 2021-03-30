@@ -24,31 +24,9 @@ F 3 "~" H 7550 3150 50  0001 C CNN
 	1    7550 3150
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Sensor:AS3935 U3
-U 1 1 60618699
-P 3450 3800
-F 0 "U3" H 3450 3900 50  0000 C CNN
-F 1 "AS3935" H 3100 4250 50  0000 C CNN
-F 2 "Package_DFN_QFN:MLPQ-16-1EP_4x4mm_P0.65mm_EP2.8x2.8mm" H 4250 4700 50  0001 C CNN
-F 3 "http://www.embeddedadventures.com/datasheets/AS3935_Datasheet_EN_v2.pdf" H 3350 3800 50  0001 C CNN
-	1    3450 3800
-	1    0    0    -1  
-$EndComp
 Text Notes 1200 2500 0    50   ~ 10
 Regulador de tension
 NoConn ~ 4250 8550
-$Comp
-L power:VBUS #PWR021
-U 1 1 6063B3B4
-P 7200 2900
-F 0 "#PWR021" H 7200 2750 50  0001 C CNN
-F 1 "VBUS" H 7215 3073 50  0000 C CNN
-F 2 "" H 7200 2900 50  0001 C CNN
-F 3 "" H 7200 2900 50  0001 C CNN
-	1    7200 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7200 2900 7200 2950
 Wire Notes Line
@@ -223,14 +201,6 @@ F 3 "" H 7900 3150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7900 3150 7700 3150
-Text GLabel 7100 3650 2    50   BiDi ~ 0
-USB_D+
-Text GLabel 7100 3550 2    50   BiDi ~ 0
-USB_D-
-Wire Wire Line
-	7100 3550 7000 3550
-Wire Wire Line
-	7100 3650 7000 3650
 Wire Notes Line
 	5850 2550 5850 4800
 Text Notes 5900 2700 0    50   ~ 10
@@ -708,11 +678,11 @@ F 3 "~" H 1350 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C 0.22u1
+L Device:C C11
 U 1 1 60613459
 P 4200 1250
-F 0 "0.22u1" H 4315 1296 50  0000 L CNN
-F 1 "C" H 4315 1205 50  0000 L CNN
+F 0 "C11" H 4315 1296 50  0000 L CNN
+F 1 "0.22u" H 4315 1205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 4238 1100 50  0001 C CNN
 F 3 "~" H 4200 1250 50  0001 C CNN
 	1    4200 1250
@@ -875,7 +845,7 @@ F 1 "Conn_01x05" H 5080 3751 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 5000 3800 50  0001 C CNN
 F 3 "~" H 5000 3800 50  0001 C CNN
 	1    5000 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J4
@@ -889,36 +859,14 @@ F 3 "~" H 4300 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J5
-U 1 1 60825316
-P 8000 4300
-F 0 "J5" H 8080 4342 50  0000 L CNN
-F 1 "Conn_01x03" H 8080 4251 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8000 4300 50  0001 C CNN
-F 3 "~" H 8000 4300 50  0001 C CNN
-	1    8000 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 60825FCB
-P 4100 2150
-F 0 "J3" H 4180 2142 50  0000 L CNN
-F 1 "Conn_01x02" H 4180 2051 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4100 2150 50  0001 C CNN
-F 3 "~" H 4100 2150 50  0001 C CNN
-	1    4100 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 6082664C
-P 7700 4400
-F 0 "#PWR026" H 7700 4150 50  0001 C CNN
-F 1 "GND" H 7705 4227 50  0000 C CNN
-F 2 "" H 7700 4400 50  0001 C CNN
-F 3 "" H 7700 4400 50  0001 C CNN
-	1    7700 4400
+P 4050 2050
+F 0 "J3" H 4130 2042 50  0000 L CNN
+F 1 "Conn_01x02" H 4130 1951 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4050 2050 50  0001 C CNN
+F 3 "~" H 4050 2050 50  0001 C CNN
+	1    4050 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -935,24 +883,16 @@ $EndComp
 $Comp
 L power:GND #PWR022
 U 1 1 60826E8D
-P 3800 2250
-F 0 "#PWR022" H 3800 2000 50  0001 C CNN
-F 1 "GND" H 3805 2077 50  0000 C CNN
-F 2 "" H 3800 2250 50  0001 C CNN
-F 3 "" H 3800 2250 50  0001 C CNN
-	1    3800 2250
+P 3750 2150
+F 0 "#PWR022" H 3750 1900 50  0001 C CNN
+F 1 "GND" H 3755 1977 50  0000 C CNN
+F 2 "" H 3750 2150 50  0001 C CNN
+F 3 "" H 3750 2150 50  0001 C CNN
+	1    3750 2150
 	1    0    0    -1  
 $EndComp
-Text GLabel 3800 2150 0    50   BiDi ~ 0
+Text GLabel 3750 2050 0    50   BiDi ~ 0
 3.3V_EN
-Text GLabel 7700 4200 0    50   BiDi ~ 0
-USB_D+
-Text GLabel 7700 4300 0    50   BiDi ~ 0
-USB_D-
-Wire Wire Line
-	7700 4300 7800 4300
-Wire Wire Line
-	7700 4200 7800 4200
 Text GLabel 4000 6250 0    50   Input ~ 0
 I2C_SCK
 Text GLabel 4000 6150 0    50   BiDi ~ 0
@@ -964,11 +904,9 @@ Wire Wire Line
 Wire Wire Line
 	4100 6350 4000 6350
 Wire Wire Line
-	3900 2250 3800 2250
+	3850 2150 3750 2150
 Wire Wire Line
-	3900 2150 3800 2150
-Wire Wire Line
-	7800 4400 7700 4400
+	3850 2050 3750 2050
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 60854E00
@@ -1017,30 +955,6 @@ Wire Wire Line
 	10300 950  10300 1050
 Wire Wire Line
 	9850 1050 9850 950 
-$Comp
-L power:PWR_FLAG #FLG03
-U 1 1 60868DFA
-P 10700 1050
-F 0 "#FLG03" H 10700 1125 50  0001 C CNN
-F 1 "PWR_FLAG" H 10700 1223 50  0000 C CNN
-F 2 "" H 10700 1050 50  0001 C CNN
-F 3 "~" H 10700 1050 50  0001 C CNN
-	1    10700 1050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10700 950  10700 1050
-$Comp
-L power:VBUS #PWR029
-U 1 1 6086D1A9
-P 10700 950
-F 0 "#PWR029" H 10700 800 50  0001 C CNN
-F 1 "VBUS" H 10715 1123 50  0000 C CNN
-F 2 "" H 10700 950 50  0001 C CNN
-F 3 "" H 10700 950 50  0001 C CNN
-	1    10700 950 
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	8700 4800 8700 2550
 Wire Notes Line
@@ -1057,9 +971,9 @@ Text Label 4200 4000 0    50   ~ 0
 LIGHTING_IRQ
 Text Label 4200 3900 0    50   ~ 0
 SPI_SCK
-Text Label 4200 3800 0    50   ~ 0
-SPI_MOSI
 Text Label 4200 3700 0    50   ~ 0
+SPI_MOSI
+Text Label 4200 3800 0    50   ~ 0
 SPI_MISO
 Text Label 4200 3600 0    50   ~ 0
 SPI_~CS~
@@ -1095,4 +1009,28 @@ Wire Notes Line
 	5650 4750 5650 2750
 Wire Notes Line
 	5650 2750 1100 2750
+$Comp
+L power:+5V #PWR0101
+U 1 1 60670ED5
+P 7200 2900
+F 0 "#PWR0101" H 7200 2750 50  0001 C CNN
+F 1 "+5V" H 7215 3073 50  0000 C CNN
+F 2 "" H 7200 2900 50  0001 C CNN
+F 3 "" H 7200 2900 50  0001 C CNN
+	1    7200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_lightning:AS3935 U3
+U 1 1 606F4869
+P 3450 3800
+F 0 "U3" H 3750 4250 50  0000 C CNN
+F 1 "AS3935" H 3100 4250 50  0000 C CNN
+F 2 "Package_DFN_QFN:MLPQ-16-1EP_4x4mm_P0.65mm_EP2.8x2.8mm" H 4250 4700 50  0001 C CNN
+F 3 "https://www.embeddedadventures.com/datasheets/AS3935_Datasheet_EN_v2.pdf" H 3350 3800 50  0001 C CNN
+	1    3450 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7000 3550
+NoConn ~ 7000 3650
 $EndSCHEMATC
