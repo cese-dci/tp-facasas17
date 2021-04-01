@@ -382,9 +382,9 @@ Wire Wire Line
 	2600 5950 2500 5950
 Wire Wire Line
 	2600 6150 2500 6150
-Text GLabel 2600 6150 2    50   Input ~ 0
+Text GLabel 2600 5950 2    50   Input ~ 0
 I2C_SCK
-Text GLabel 2600 5950 2    50   BiDi ~ 0
+Text GLabel 2600 6150 2    50   BiDi ~ 0
 I2C_SDA
 Wire Wire Line
 	2600 5750 2500 5750
@@ -893,9 +893,9 @@ F 3 "" H 3750 2150 50  0001 C CNN
 $EndComp
 Text GLabel 3750 2050 0    50   BiDi ~ 0
 3.3V_EN
-Text GLabel 4000 6250 0    50   Input ~ 0
+Text GLabel 4000 6150 0    50   Input ~ 0
 I2C_SCK
-Text GLabel 4000 6150 0    50   BiDi ~ 0
+Text GLabel 4000 6250 0    50   BiDi ~ 0
 I2C_SDA
 Wire Wire Line
 	4100 6150 4000 6150
