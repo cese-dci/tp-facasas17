@@ -1033,4 +1033,102 @@ F 3 "https://www.embeddedadventures.com/datasheets/AS3935_Datasheet_EN_v2.pdf" H
 $EndComp
 NoConn ~ 7000 3550
 NoConn ~ 7000 3650
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 606FE880
+P 7750 1100
+F 0 "H1" H 7850 1146 50  0000 L CNN
+F 1 "MountingHole" H 7600 1000 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380" H 7750 1100 50  0001 C CNN
+F 3 "~" H 7750 1100 50  0001 C CNN
+	1    7750 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 606FFEA2
+P 8350 1100
+F 0 "H3" H 8450 1146 50  0000 L CNN
+F 1 "MountingHole" H 8250 1000 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380" H 8350 1100 50  0001 C CNN
+F 3 "~" H 8350 1100 50  0001 C CNN
+	1    8350 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6070009E
+P 7750 1450
+F 0 "H2" H 7850 1496 50  0000 L CNN
+F 1 "MountingHole" H 7600 1350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380" H 7750 1450 50  0001 C CNN
+F 3 "~" H 7750 1450 50  0001 C CNN
+	1    7750 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 607007D6
+P 8350 1450
+F 0 "H4" H 8450 1496 50  0000 L CNN
+F 1 "MountingHole" H 8250 1350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380" H 8350 1450 50  0001 C CNN
+F 3 "~" H 8350 1450 50  0001 C CNN
+	1    8350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 6070160A
+P 7750 1800
+F 0 "FID1" H 7835 1846 50  0000 L CNN
+F 1 "Fiducial" H 7835 1755 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 7750 1800 50  0001 C CNN
+F 3 "~" H 7750 1800 50  0001 C CNN
+	1    7750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 60701BC5
+P 8350 1800
+F 0 "FID3" H 8435 1846 50  0000 L CNN
+F 1 "Fiducial" H 8435 1755 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 8350 1800 50  0001 C CNN
+F 3 "~" H 8350 1800 50  0001 C CNN
+	1    8350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 607021A7
+P 7750 2100
+F 0 "FID2" H 7835 2146 50  0000 L CNN
+F 1 "Fiducial" H 7835 2055 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 7750 2100 50  0001 C CNN
+F 3 "~" H 7750 2100 50  0001 C CNN
+	1    7750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 6070274C
+P 8350 2100
+F 0 "FID4" H 8435 2146 50  0000 L CNN
+F 1 "Fiducial" H 8435 2055 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 8350 2100 50  0001 C CNN
+F 3 "~" H 8350 2100 50  0001 C CNN
+	1    8350 2100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8850 2350 8850 850 
+Text Notes 7500 950  0    50   ~ 10
+Agujeros de montaje - Fiduciales
+Wire Notes Line
+	7450 2350 7450 850 
+Wire Notes Line
+	7450 2350 8850 2350
+Wire Notes Line
+	7450 850  8850 850 
 $EndSCHEMATC
